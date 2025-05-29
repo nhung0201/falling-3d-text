@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    font-family: "Parisienne", cursive;
+    perspective: 1000px;
+    background: radial-gradient(circle at center, #200236, #000000 80%);
+    /* Đổi nền thành màu đen */
+}
+
+#scene {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.15s ease-out;
+}
+
+.falling-text {
+    position: absolute;
+    font-size: 20px;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 1;
+    transform-style: preserve-3d;
+    animation: fadeInOut 2s infinite alternate;
+    font-weight: bold;
+    user-select: none;
+    color: #fff;
+}
+
+.falling-text.text-1 {
+    text-shadow:
+        0 0 5px #25d7fb,
+        0 0 10px #25d7fb,
+        0 0 15px #25d7fb,
+        0 0 20px #25d7fb,
+        0 0 25px #25d7fb,
+        0 0 30px #25d7fb;
+}
+
+.falling-text.text-2 {
+    text-shadow:
+        0 0 5px #00ff66,
+        0 0 10px #00ff66,
+        0 0 15px #00ff66,
+        0 0 20px #00ff66,
+        0 0 25px #00ff66,
+        0 0 30px #00ff66;
+}
+
+.falling-text.text-3 {
+    text-shadow:
+        0 0 5px #ff63a2,
+        0 0 10px #ff63a2,
+        0 0 15px #ff63a2,
+        0 0 20px #ff63a2,
+        0 0 25px #ff63a2,
+        0 0 30px #ff63a2;
+}
+
+.heart,
+.rose {
+    position: absolute;
+    pointer-events: none;
+    opacity: 1;
+    transform-style: preserve-3d;
+    animation: float 4s infinite ease-in-out;
+}
+
+.heart {
+    width: 50px;
+    height: 50px;
+    clip-path: url(#heart);
+    overflow: hidden;
+}
+
+.heart img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    animation: scale3D 2s infinite ease-in-out;
+}
+
+.rose {
+    color: #e70a0a;
+    font-size: 20px;
+    transform: rotate(45deg);
+    text-shadow: 0 0 5px #5491a0, 0 0 10px #7092a7;
+}
+
+@keyframes fadeInOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.2;
+    }
+}
+
+@keyframes scale3D {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+}
