@@ -9,12 +9,6 @@ const texts = [
     "Cố gắng nhé !",
 ];
 
-let images = [
-    "https://drive.google.com/file/d/1iY7cZhSSXQMFMJ5Kjf9NJL8UL5fWcyWC/view?usp=drivesdk",
-    "https://drive.google.com/file/d/1hOzwCosCFc2CPVi93OudvZvg3RmcWmEc/view?usp=drivesdk",
-    "https://drive.google.com/file/d/1ebXy5QIsrRatvzqPMlwawOTPCI1dY3A2/view?usp=drivesdk",
-];
-
 const scene = document.getElementById("scene");
 let rotateX = 0, rotateY = 0;
 let targetRotateX = 0, targetRotateY = 0;
@@ -57,7 +51,7 @@ function createFallingText(initial = false) {
     text.innerText = texts[Math.floor(Math.random() * texts.length)];
 
     const startX = Math.random() * window.innerWidth;
-    const zLayer = Math.random() * 400 - 200;
+    const zLayer = Math.random() * 250 - 200;
     text.style.left = startX + "px";
     text.style.fontSize = `${Math.random() * 20 + 18}px`;
     text.style.transform = `translateZ(${zLayer}px)`;
@@ -72,7 +66,7 @@ function createFallingText(initial = false) {
     scene.appendChild(text);
 
     let posY = startY;
-    const speed = Math.random() * 2 + 0.5;
+    const speed = Math.random() * 1 + 0.5;
 
     function animate() {
         posY += speed;
@@ -95,7 +89,7 @@ function createHeart(initial = false, initialY = -50) {
     heart.innerHTML = `<img src="${images[Math.floor(Math.random() * images.length)]}" alt="♡" />`;//"♡";
 
     const startX = Math.random() * window.innerWidth;
-    const zLayer = Math.random() * 400 - 200;
+    const zLayer = Math.random() * 250 - 200;
     heart.style.left = startX + "px";
     heart.style.top = initial ? (Math.random() * window.innerHeight) + "px" : "-50px";
     heart.style.transform = `translateZ(${zLayer}px)`;
@@ -103,7 +97,7 @@ function createHeart(initial = false, initialY = -50) {
     scene.appendChild(heart);
 
     let posY = initial ? parseFloat(heart.style.top) : -50;
-    const speed = Math.random() * 1.5 + 1;
+    const speed = Math.random() * 0.5 + 1;
 
     function animateHeart() {
         posY += speed;
@@ -121,18 +115,18 @@ function createHeart(initial = false, initialY = -50) {
 function createRose(initial = false, initialY = -50) {
     const rose = document.createElement("div");
     rose.className = "rose";
-    rose.innerText = "🌺";
+    rose.innerText = "😝";
 
     const startX = Math.random() * window.innerWidth;
-    const zLayer = Math.random() * 400 - 200;
+    const zLayer = Math.random() * 250 - 200;
     rose.style.left = startX + "px";
     rose.style.top = initial ? (Math.random() * window.innerHeight) + "px" : "-50px";
-    rose.style.transform = `translateZ(${zLayer}px) rotate(${Math.random() * 360}deg)`;
+    rose.style.transform = `translateZ(${zLayer}px) rotate(${Math.random() * 260}deg)`;
 
     scene.appendChild(rose);
 
     let posY = initial ? parseFloat(rose.style.top) : -50;
-    const speed = Math.random() * 1.5 + 1;
+    const speed = Math.random() * 0.5 + 1;
 
     function animateRose() {
         posY += speed;
@@ -159,6 +153,6 @@ for (let i = 0; i < 5; i++) {
 }
 
 // Increase frequency of new elements
-setInterval(createFallingText, 300);
-setInterval(createHeart, 1000);
-setInterval(createRose, 1000);
+setInterval(createFallingText, 200);
+setInterval(createHeart, 500);
+setInterval(createRose, 500);
