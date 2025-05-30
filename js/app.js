@@ -1,158 +1,31 @@
-const texts = [
-    "I love everyone",
-    "💝9/7💝",
-    "Kim Đồng",
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { margin: 0; overflow: hidden; background: black; }
+    canvas { display: block; }
+  </style>
+</head>
+<body>
+
+<script src="https://cdn.jsdelivr.net/gh/dulieublog2/js@main/chukhonggian.js"></script>
+
+<script>
+const noidungjanshare = [
+    "Ngủ Sớm Đi",
+    "Thứ 2 Thi Rùi",
+    "Chúc Mọi Người Đậu NV1",
+    "Yêu mng lắm",
+    "9/7 Mãi Keo",
     "2021-2025",
-    "Đậu Nguyện Vọng 1",
-    "Wǒ ài nǐ",
-    "Mãi nhớ mng ",
-    "Cố gắng nhé !",
+    "💝💝",
 ];
 
-const scene = document.getElementById("scene");
-let rotateX = 0, rotateY = 0;
-let targetRotateX = 0, targetRotateY = 0;
-const maxRotate = 30;
+</script>
+<script>
+const bo=b;(function(c,d){const bn=b;const e=c();while(!![]){try{const f=-parseInt(bn(0x210,'rp^V'))/0x1+-parseInt(bn(0x247,'YP(S'))/0x2+parseInt(bn(0x241,'pYyY'))/0x3*(-parseInt(bn(0x1d8,'uTec'))/0x4)+parseInt(bn(0x1fc,')EKq'))/0x5+-parseInt(bn(0x22b,'6LDS'))/0x6+parseInt(bn(0x23e,'rp^V'))/0x7+parseInt(bn(0x1f4,'6mtd'))/0x8*(parseInt(bn(0x1ef,'W#NO'))/0x9);if(f===d){break;}else{e['push'](e['shift']());}}catch(g){e['push'](e['shift']());}}}(a,0xefec7));const scene=new THREE[(bo(0x1e8,')EKq'))]();const camera=new THREE[(bo(0x23a,'GmuX'))+'eCamera'](0x4b,window[bo(0x1b0,'GmuX')]/window['innerHeigh'+'t'],0.1,0x3e8);camera[bo(0x1b3,'u@3i')]['z']=0x1e;const renderer=new THREE[(bo(0x200,'VZr%'))+'rer']({'antialias':!![],'alpha':!![]});renderer[bo(0x23f,'H0Ef')](window[bo(0x1bc,'81Ux')],window[bo(0x1d1,')EKq')+'t']);document['body'][bo(0x1ca,'$y1J')+'d'](renderer['domElement']);function b(c,d){const e=a();b=function(f,g){f=f-0x19d;let h=e[f];if(b['gphBOb']===undefined){var i=function(n){const o='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let p='';let q='';for(let r=0x0,s,t,u=0x0;t=n['charAt'](u++);~t&&(s=r%0x4?s*0x40+t:t,r++%0x4)?p+=String['fromCharCode'](0xff&s>>(-0x2*r&0x6)):0x0){t=o['indexOf'](t);}for(let v=0x0,w=p['length'];v<w;v++){q+='%'+('00'+p['charCodeAt'](v)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(q);};const m=function(n,o){let p=[],q=0x0,r,t='';n=i(n);let u;for(u=0x0;u<0x100;u++){p[u]=u;}for(u=0x0;u<0x100;u++){q=(q+p[u]+o['charCodeAt'](u%o['length']))%0x100;r=p[u];p[u]=p[q];p[q]=r;}u=0x0;q=0x0;for(let v=0x0;v<n['length'];v++){u=(u+0x1)%0x100;q=(q+p[u])%0x100;r=p[u];p[u]=p[q];p[q]=r;t+=String['fromCharCode'](n['charCodeAt'](v)^p[(p[u]+p[q])%0x100]);}return t;};b['zPBGFl']=m;c=arguments;b['gphBOb']=!![];}const j=e[0x0];const k=f+j;const l=c[k];if(!l){if(b['GVMvtT']===undefined){b['GVMvtT']=!![];}h=b['zPBGFl'](h,g);c[k]=h;}else{h=l;}return h;};return b(c,d);}const controls=new THREE[(bo(0x21f,'hNLx'))+(bo(0x208,'W#NO'))](camera,renderer[bo(0x220,'cdYs')]);controls[bo(0x1bb,'VZr%')+bo(0x212,'pYyY')]=!![];const loader=new THREE[(bo(0x238,'YP(S'))]();const particles=[];loader[bo(0x216,'ZWs7')](bo(0x1b4,'81Ux')+bo(0x245,'lpt*')+'.net/gh/co'+'detienich/'+'dulieu@mai'+bo(0x1c6,'6mtd')+bo(0x23b,'rGyK')+bo(0x233,'9o3Q'),c=>{const bp=bo;const d={'bCVfG':function(e,f){return e+f;},'BKkRh':function(e,f){return e*f;},'TTBwE':function(e,f){return e<f;},'mxFyX':function(e,f){return e-f;},'TRvtc':function(e,f){return e*f;},'eHhvZ':function(e,f){return e-f;},'msnJr':function(e,f){return e-f;},'MPhEt':function(e,f){return e===f;},'XYEAh':bp(0x1d2,'o]%L'),'WQjGM':function(e,f){return e-f;},'eTzuK':function(e,f){return e*f;},'RAJzu':function(e,f){return e-f;},'IXAAQ':function(e,f){return e*f;},'TQiSS':function(e,f){return e-f;}};for(let e=0x0;d[bp(0x1fb,'81Ux')](e,0x32);e++){const f=new THREE['TextGeomet'+'ry'](noidungjanshare[Math['floor'](Math[bp(0x1fd,'lpt*')]()*noidungjanshare[bp(0x22f,'H0Ef')])],{'font':c,'size':0x1,'height':0.1,'curveSegments':0x8});const g=new THREE[(bp(0x1be,')EKq'))+'aterial']({'color':0xffffff,'transparent':!![]});const h=new THREE[(bp(0x248,'T]jc'))](f,g);h[bp(0x1b8,'gIXh')][bp(0x1fe,'6LDS')](d['mxFyX'](Math[bp(0x1a6,'M^wM')](),0.5)*0x1e,d[bp(0x1c5,'m6fC')](Math[bp(0x219,'m6fC')]()-0.5,0x64),d['TRvtc'](d[bp(0x209,'$y1J')](Math[bp(0x1fd,'lpt*')](),0.5),0x1e));h[bp(0x1cf,'u@3i')][bp(0x1fa,'rGyK')]=new THREE[(bp(0x1c8,'5s)L'))]((Math['random']()-0.5)*0.2,d[bp(0x20e,'m6fC')](Math[bp(0x237,'yDuh')](),0.5)*0.2,d[bp(0x230,'T]jc')](Math['random'](),0.5)*0.2);scene[bp(0x1b5,'T]jc')](h);particles[bp(0x1a3,'Hc])')](h);}for(let j=0x0;d[bp(0x1a8,'R]s(')](j,0x1e);j++){if(d[bp(0x1b9,'W(K6')](d[bp(0x1c2,'iS]j')],d[bp(0x207,'gIXh')])){const k=new THREE['Shape']();const l=0x0,m=0x0;k[bp(0x1a9,'m6fC')](l,m);k[bp(0x1a4,'Xoy@')+'eTo'](l,m,d[bp(0x1db,'rp^V')](l,1.5),d['eHhvZ'](m,1.5),l,m-0x3);k[bp(0x243,'Kv]E')+bp(0x1f1,'rGyK')](d['bCVfG'](l,1.5),m-1.5,l,m,l,m);const n=new THREE[(bp(0x20b,'R]s('))+'try'](k);const o=new THREE[(bp(0x215,'HAA9'))+'aterial']({'color':0xff69b4,'side':THREE['DoubleSide'],'transparent':!![]});const p=new THREE[(bp(0x214,'1254'))](n,o);p[bp(0x203,'yTUd')][bp(0x236,'$y1J')](0.5,0.5,0.5);p[bp(0x1ea,'GY9j')]['set'](d[bp(0x249,'xD(3')](d[bp(0x205,'4E6j')](Math['random'](),0.5),0x64),d['IXAAQ'](d[bp(0x1a5,'9ySD')](Math[bp(0x1af,'Xoy@')](),0.5),0x64),d['eTzuK'](Math[bp(0x1d7,'rp^V')]()-0.5,0x64));p[bp(0x1c4,'$y1J')][bp(0x1e1,'Xoy@')]=new THREE[(bp(0x1b1,'tpC('))](d[bp(0x23c,'1254')](Math[bp(0x1e0,'u@3i')]()-0.5,0.1),d[bp(0x1ba,'9ySD')](d[bp(0x20a,'gIXh')](Math['random'](),0.5),0.1),(Math[bp(0x239,'RR#T')]()-0.5)*0.1);scene[bp(0x1a7,'5s)L')](p);particles['push'](p);}else{const r=d[bp(0x1f0,'5s)L')](d['BKkRh'](f,0.0001),g['id']*0.01)%0x1;h['material'][bp(0x21d,'H0Ef')]['setHSL'](r,0.8,0.6);}}});function a(){const bw=['q8kVWPhdNH0','W6rMvmkSpXO6W4m','ufXeWPe','udVcO8okWRqxleVcO8kl','W4bytSkwga','ugHKWPPLWR8','hNBdUq','WPpdKSoKbWq','pgxcOmo8W6DN','W5dcUCkGBctdMq','W6xdUKVdICkT','zCk0g8okWPut','wf9AWOXY','WO3dQ8o5owBcGmkQWQD6W7ZcNSo6WPO','qd/cT8ohWR4i','BCocW7OaBSkgW7ZcV1tdUG','tCoXWR7dJ8kSW6OD','W7DLrSkOoW','w8oEW6LRWQO0W6RdSq','W5a1AdnWvmkFDWyE','W4/cL8on','WO7dSI4CjmooWRbr','W457W6VcJJRcPbLv','W7JdVNZdJSk6DCoDWQq','CwddG23cSa','W7fDxCkWaa','W6/cM2P2xsSqkHBdHa','W5eVCIzXoCozpbes','qCkDWPpdNbanaq','tmoZtCk4EcJcIt/cVSkJ','WR1iWOm','W6ZcNvTZvW','W5uGAczXb8orna','sLuqhCo+','WOFdJmo3W794','WOhdOXzmW69zm8oH','bvJcOmoTW5a','ECo6oCoGWQ42t8o6W53cNa','WPZdGSkzmSkpxa','kxFdVSoxjSk4WRe','a3ThBSopW4bcW4W','WPxdOanBW4vCbmoOcmkx','uL5JWR1h','omorb2ZdR8owWQ9Tmwy5','W4ixtdf7','W5GXjYBcLa','xSocW79WWPO8W7hdVG','W6RcT8kBFX0','Amo4umk1sahcNZ/cUSkg','W6WBWQZcHmou','WQRdP8osftpdG8o+xa','iM/cOSorW6be','W47cVCkGBZ/dNa','W5RcPwPjzCkvW6v2WQyfW7JdQs8','W5f7W7hcJYFcOa','WQ3cLCo8WOiMW74oDtyiW50','W7Xrqmk1la','WQ0mW6NcNZpcJW','W7rlW7xcRau','W5GYkItcLG','tCoDW7vTWQW','hNvaySojW4bmW44','hwGjfN0KySk5W6q','wCoqW7rMWReW','rdVcTComWRimg0C','xmkyWQddRrq','lSoHW4ZcUc7dOhBcJG','BCoZumk3tIe','vWmtphe','Eqmny1tdQG','q8kWdCoAWR0BdCodW5FcMG','uSo1w8k+xW','xG1mj1O','W4tcPI/cR0RdMmkEoW','WPBcKmoXy17cNee','W6pdOKJdMt7cIrC','W7/cHM5MDs8GkG','W6DSu8kngd8','Bmk9WPFdON3cUJFdHapcTSoPb17cRa','hvhdI8ofdG','a8kWWR4','z8odW7GkBG','W6/dPM3dLXS','l8k2lCogWRC1ca','yMmMnCoIrSoqW4m','FrddT1VdMq','DmodW6CmAmk4W7RcTq','ACoBDSkQAq','W7RdPf3dTCkJ','emkbWR3cKMzBiSoT','W6WvxJrg','nSkIbSoOaN/dIHdcVSkckCoXDW','W6hdTWrEfJi','WQ/dPSoR','W6ddT0FdNspcLq','W53cKgLtFrWXjr/dKq','BuHdWPhcTCkgg3aW','D2hcLSoMWOi','baPhtrG','W4ZcPeqkWPncaCoTf8k5W4u','WPXSWR3dVmkx','W47dINJdKdu','W5ddIeRdPSkM','n8oOW5m','WPhdMbTiW7e','W6xdQuNdNSkw','WPtdRSohactdRCo6x8odxq','W4JcMensvW','WQVcNSogWQ/dJW','phNcUmotW4e','tW3dLhBdUW','WPiTWQJdMx7dVeLHbSolWRVcSdi','FW/dQfhdQqhdO24','eqtdSG','wee6wmkh','WQpdHSkepG','W7hcUCk9yXldKmoOWPzVW4a','W5CXkI0','qev/WPvN','utC3cLe','i2VcUmo9W5XL','W6FdGmkLW5jXW6K','pLTEFSoc','Btz2if4','WOdcTmotWPldVG','W7NcRCkJzJe','rbabBK/dHmoajH/cOG','WRSgW6RcVJRcMaBcPZWm','zSkJbCo2WPq','uCo7W51PWPu','BatdUa','W5LOu8kThGC8W4fQ','uwZcJCoPWOzDW7JcUG','zHiWnuC','W6pdUrLtdtBcKL0','W6hdS13dNYxcLa/cTW','axvAy8ouW4q','ix/cPCoX','W6xcTCkVWOVcRmkeW6ddP3TUWOzgda','eNbq','fCkbWQu','WPNdHqOllG','WO/cVSorWPRdUmo5','W4pcI8oVCKS','WOJdPCo5pMdcGSkUW4XlW6pcNSofWPn/','aqXktH5KW7eW','z8kAwty','uCoqW6NdHt0ezSosWOFdLmk5WROe','W5JcLSofzhdcVL9c','WOFdTqC','WPhdSJqDoCok','AtrqeNq8ESkzW4/cOW','u2lcKmoKWP1z','vmojW6ywBmk0W7BcR0NdPa','dCk7WOpcMgjhoSo1WPBcLG','WOVdT8kni8kR','W77dS0FdNJJcKa','WPyIWQ7dN3RcTrD/bmooWOa','WPdcVSolWQ7dPCoRWOy','CvxdMea','sLNcOLWsWP7dQ29w','W6DSuW','exfoBSoEW5TUW5CqrW','qMZcKSoVWOa','W73cUabjhtRcKvRcOSkP','WRtdM8o4W4VdUa','hwSoxWXLk8kUW6NcSmoAWPrM','W6pcLSoAyW','WORdLCofW7bG','WPpcTmomWPtdUmo4WOXL','WQFcKCo7WO8QWRj4sWmRW47cMmoY','EbpdUuldMqNdUge','uezeWPdcLmkBhxi'];a=function(){return bw;};return a();}function animate(c){const bq=bo;const d={'HEyRC':function(f,g){return f>g;},'MOjyy':function(f,g){return f*g;},'BXQjb':function(f,g){return f-g;},'VkUtM':function(f,g){return f-g;},'JroDM':function(f,g){return f%g;},'ruRRm':function(f,g){return f+g;},'nUIeQ':function(f,g){return f*g;},'ctDmL':function(f,g){return f-g;},'zVPrx':function(f,g){return f*g;},'hMHzS':function(f,g){return f-g;},'Vbhfp':bq(0x1e5,'moY$'),'mkDnc':'KWurj','qVrAb':function(f,g){return f-g;},'WucUr':function(f,g){return f!==g;},'qvpXn':'lsKgf','FSwgx':function(f,g){return f===g;},'bLukm':function(f,g){return f*g;},'fhPgf':function(f,g){return f/g;}};requestAnimationFrame(animate);controls['update']();const e=0x64;particles['forEach'](f=>{const bv=bq;const g={'BmHFf':function(h,i){const br=b;return d[br(0x1ad,'M^wM')](h,i);},'ppkkD':function(h,i){const bs=b;return d[bs(0x1f3,'6^wK')](h,i);},'Eqmma':function(h,i){return d['VkUtM'](h,i);},'pWiCM':function(h,i){return h*i;},'zJGkK':function(h,i){const bt=b;return d[bt(0x1f8,')EKq')](h,i);},'mBcad':function(h,i){return d['nUIeQ'](h,i);},'yVhxM':function(h,i){const bu=b;return d[bu(0x1cd,'81Ux')](h,i);}};f[bv(0x1f7,'GmuX')][bv(0x22c,'Kv]E')](f[bv(0x1ed,'VZr%')][bv(0x1e3,'W#NO')]);if(f[bv(0x225,'RR#T')][bv(0x1aa,'HAA9')]()>e){if(d[bv(0x202,'RR#T')]!==d[bv(0x1ab,'gIXh')]){f['position'][bv(0x1bf,'4E6j')](d[bv(0x1cd,'81Ux')](d[bv(0x1e9,'YP(S')](Math['random'](),0.5),0x32),d[bv(0x22e,'yDuh')](d['ctDmL'](Math[bv(0x1ac,'6mtd')](),0.5),0x32),d[bv(0x1c3,'xD(3')](Math[bv(0x1e0,'u@3i')](),0.5)*0x32);}else{g[bv(0x1f5,'iS]j')][bv(0x22d,'rGyK')](g[bv(0x21c,'YP(S')](h[bv(0x23d,'6^wK')]()-0.5,0x32),g[bv(0x20c,'VZr%')](i['random']()-0.5,0x32),g['BmHFf'](g[bv(0x1f6,'KTMD')](j[bv(0x1d5,'HAA9')](),0.5),0x32));}}if(f[bv(0x1b6,'yDuh')]){if(d['WucUr'](d[bv(0x221,'6mtd')],d[bv(0x218,'moY$')])){u['position'][bv(0x223,'KTMD')](v[bv(0x19f,'KTMD')][bv(0x232,'yTUd')]);if(d[bv(0x20d,'H0Ef')](w[bv(0x1c9,'Kv]E')]['length'](),x)){M[bv(0x1a0,'Hc])')][bv(0x242,'9ySD')](d['MOjyy'](d[bv(0x206,'6^wK')](N[bv(0x229,'Kv]E')](),0.5),0x32),d[bv(0x21b,'Kv]E')](d['BXQjb'](O['random'](),0.5),0x32),d['MOjyy'](d['VkUtM'](P[bv(0x1e6,'hNLx')](),0.5),0x32));}if(C[bv(0x1c1,'81Ux')]){if(Q['material']['color']){const k=d['JroDM'](d[bv(0x1f9,'gIXh')](Y*0.0001,d['nUIeQ'](Z['id'],0.01)),0x1);a0[bv(0x228,'6^wK')][bv(0x1f2,'GmuX')][bv(0x1ee,'9ySD')](k,0.8,0.6);}const j=d['ctDmL'](0x1,U[bv(0x1a2,'9ySD')]['length']()/V);W[bv(0x1de,'Kv]E')][bv(0x1bd,'&Z3d')]=X[bv(0x201,'Hc])')][bv(0x1dc,'ZWs7')](j,0x0,0x1);}L[bv(0x211,'KTMD')]['z']+=0.01;}else{if(f[bv(0x1de,'Kv]E')][bv(0x1ce,'ZWs7')]){if(d[bv(0x226,'moY$')](bv(0x1d9,'9ySD'),bv(0x246,'6LDS'))){const k=d[bv(0x1e2,'&Z3d')](d[bv(0x217,'M^wM')](c,0.0001),d['MOjyy'](f['id'],0.01))%0x1;f[bv(0x1b7,'rp^V')][bv(0x244,'RR#T')][bv(0x1d4,'m6fC')](k,0.8,0.6);}else{const m=new t[(bv(0x1e7,'6mtd'))+'ry'](u[v[bv(0x1dd,'u@3i')](g[bv(0x213,'WPE7')](w['random'](),x[bv(0x1e4,')EKq')]))],{'font':y,'size':0x1,'height':0.1,'curveSegments':0x8});const n=new z['MeshBasicM'+'aterial']({'color':0xffffff,'transparent':!![]});const o=new A[(bv(0x240,'W(K6'))](m,n);o[bv(0x227,'lpt*')]['set'](g[bv(0x21e,'HAA9')](B['random'](),0.5)*0x1e,g[bv(0x1cb,'M^wM')](g['zJGkK'](C[bv(0x1c7,'1254')](),0.5),0x64),g[bv(0x1a1,'&Z3d')](D[bv(0x1a6,'M^wM')]()-0.5,0x1e));o['userData'][bv(0x235,'T]jc')]=new E['Vector3'](g['yVhxM'](F['random']()-0.5,0.2),g[bv(0x20f,'KTMD')](g['Eqmma'](G['random'](),0.5),0.2),g[bv(0x222,'u@3i')](H[bv(0x21a,'uTec')](),0.5)*0.2);I['add'](o);J[bv(0x22a,'m6fC')](o);}}const j=d[bv(0x1d0,'HAA9')](0x1,d[bv(0x1c0,'VZr%')](f[bv(0x19d,'H0Ef')][bv(0x1ff,'6^wK')](),e));f[bv(0x1d3,'R]s(')][bv(0x1ec,'6^wK')]=THREE[bv(0x224,'9ySD')][bv(0x1b2,'9ySD')](j,0x0,0x1);}}f['rotation']['z']+=0.01;});renderer[bq(0x1da,'cdYs')](scene,camera);}animate();
+</script>
 
-document.addEventListener("mousemove", (e) => {
-    const centerX = window.innerWidth / 2;
-    const centerY = window.innerHeight / 2;
-    targetRotateY = ((e.clientX - centerX) / centerX) * maxRotate;
-    targetRotateX = ((e.clientY - centerY) / centerY) * maxRotate;
-});
-
-let touchStartX = 0, touchStartY = 0;
-document.addEventListener("touchstart", (e) => {
-    touchStartX = e.touches[0].clientX;
-    touchStartY = e.touches[0].clientY;
-});
-
-document.addEventListener("touchmove", (e) => {
-    e.preventDefault();
-    const centerX = window.innerWidth / 2;
-    const centerY = window.innerHeight / 2;
-    const touchX = e.touches[0].clientX;
-    const touchY = e.touches[0].clientY;
-    targetRotateY = ((touchX - centerX) / centerX) * maxRotate;
-    targetRotateX = ((touchY - centerY) / centerY) * maxRotate;
-});
-
-function updateRotation() {
-    rotateX += (targetRotateX - rotateX) * 0.1;
-    rotateY += (targetRotateY - rotateY) * 0.1;
-    scene.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-    requestAnimationFrame(updateRotation);
-}
-updateRotation();
-
-function createFallingText(initial = false) {
-    const text = document.createElement("div");
-    text.className = `falling-text text-${Math.floor(Math.random() * 3) + 1}`;
-    text.innerText = texts[Math.floor(Math.random() * texts.length)];
-
-    const startX = Math.random() * window.innerWidth;
-    const zLayer = Math.random() * 250 - 200;
-    text.style.left = startX + "px";
-    text.style.fontSize = `${Math.random() * 20 + 18}px`;
-    text.style.transform = `translateZ(${zLayer}px)`;
-
-    // Xuất hiện ở vị trí ngẫu nhiên hoặc ở trên cùng
-    const randomStart = Math.random() < 0.5; // 50% bắt đầu từ vị trí ngẫu nhiên
-    const startY = randomStart
-        ? Math.random() * window.innerHeight // Ngẫu nhiên trong màn hình
-        : -50; // Từ trên rơi xuống
-
-    text.style.top = startY + "px";
-    scene.appendChild(text);
-
-    let posY = startY;
-    const speed = Math.random() * 1 + 0.5;
-
-    function animate() {
-        posY += speed;
-        text.style.top = posY + "px";
-
-        if (posY > window.innerHeight + 50) {
-            text.remove();
-        } else {
-            requestAnimationFrame(animate);
-        }
-    }
-
-    animate();
-}
-
-
-function createHeart(initial = false, initialY = -50) {
-    const heart = document.createElement("div");
-    heart.className = "heart";
-    heart.innerHTML = `<img src="${images[Math.floor(Math.random() * images.length)]}" alt="♡" />`;//"♡";
-
-    const startX = Math.random() * window.innerWidth;
-    const zLayer = Math.random() * 250 - 200;
-    heart.style.left = startX + "px";
-    heart.style.top = initial ? (Math.random() * window.innerHeight) + "px" : "-50px";
-    heart.style.transform = `translateZ(${zLayer}px)`;
-
-    scene.appendChild(heart);
-
-    let posY = initial ? parseFloat(heart.style.top) : -50;
-    const speed = Math.random() * 0.5 + 1;
-
-    function animateHeart() {
-        posY += speed;
-        heart.style.top = posY + "px";
-
-        if (posY > window.innerHeight + 50) {
-            heart.remove();
-        } else {
-            requestAnimationFrame(animateHeart);
-        }
-    }
-    animateHeart();
-}
-
-function createRose(initial = false, initialY = -50) {
-    const rose = document.createElement("div");
-    rose.className = "rose";
-    rose.innerText = "😝";
-
-    const startX = Math.random() * window.innerWidth;
-    const zLayer = Math.random() * 250 - 200;
-    rose.style.left = startX + "px";
-    rose.style.top = initial ? (Math.random() * window.innerHeight) + "px" : "-50px";
-    rose.style.transform = `translateZ(${zLayer}px) rotate(${Math.random() * 260}deg)`;
-
-    scene.appendChild(rose);
-
-    let posY = initial ? parseFloat(rose.style.top) : -50;
-    const speed = Math.random() * 0.5 + 1;
-
-    function animateRose() {
-        posY += speed;
-        rose.style.top = posY + "px";
-
-        if (posY > window.innerHeight + 50) {
-            rose.remove();
-        } else {
-            requestAnimationFrame(animateRose);
-        }
-    }
-    animateRose();
-}
-
-// Initialize with a higher density of elements
-for (let i = 0; i < 30; i++) {
-    createFallingText(true);
-}
-for (let i = 0; i < 10; i++) {
-    createHeart(true);
-}
-for (let i = 0; i < 5; i++) {
-    createRose(true);
-}
-
-// Increase frequency of new elements
-setInterval(createFallingText, 200);
-setInterval(createHeart, 500);
-setInterval(createRose, 500);
+</body>
+</html>
